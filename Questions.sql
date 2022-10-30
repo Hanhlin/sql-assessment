@@ -22,7 +22,7 @@ ORDER BY store_location, revenue_sum;
 -- Please ensure all records from each table are accounted for.​
 -- ================================================================================================
 
-> Extract geo from store_location in store_revenue table, and sum up the revenue by date and geo
+-- Extract geo from store_location in store_revenue table, and sum up the revenue by date and geo
 SELECT date, RIGHT(RTRIM(store_location), 2) AS geo, sum(revenue) as revenue 
 INTO #temp_1
 FROM store_revenue
@@ -49,7 +49,7 @@ ON a.date = b.date AND a.geo = b.geo
 ORDER BY a.geo, a.date
 
 
--- Question #4 In your opinion, what is the most efficient store and why?​
+-- Question #4 In your opinion, what is the most efficient store and why?
 -- ================================================================================================
 
 -- SELECT * FROM marketing_data
