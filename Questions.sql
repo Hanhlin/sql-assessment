@@ -1,7 +1,7 @@
 
 
-Question #0 (Already done for you as an example) Select the first 2 rows from the marketing data​
-================================================================================================
+-- Question #0 (Already done for you as an example) Select the first 2 rows from the marketing data​
+-- ================================================================================================
 SELECT TOP 2 * FROM marketing_data;
 
 
@@ -22,7 +22,7 @@ ORDER BY store_location, revenue_sum;
 -- Please ensure all records from each table are accounted for.​
 -- ================================================================================================
 
--- Extract geo from store_location in store_revenue table, and sum up the revenue by date and geo
+> Extract geo from store_location in store_revenue table, and sum up the revenue by date and geo
 SELECT date, RIGHT(RTRIM(store_location), 2) AS geo, sum(revenue) as revenue 
 INTO #temp_1
 FROM store_revenue
