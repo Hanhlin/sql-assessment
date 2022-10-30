@@ -1,7 +1,7 @@
 
 
-# Question #0 (Already done for you as an example) Select the first 2 rows from the marketing data​
--- ================================================================================================
+Question #0 (Already done for you as an example) Select the first 2 rows from the marketing data​
+================================================================================================
 SELECT TOP 2 * FROM marketing_data;
 
 
