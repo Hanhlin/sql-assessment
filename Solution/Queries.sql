@@ -23,6 +23,7 @@ ORDER BY store_location, revenue_sum;
 -- ================================================================================================
 
 -- Extract geo from store_location in store_revenue table, and sum up the revenue by date and geo
+DROP TABLE IF EXISTS #temp_1;
 SELECT date, RIGHT(RTRIM(store_location), 2) AS geo, sum(revenue) as revenue 
 INTO #temp_1
 FROM store_revenue
