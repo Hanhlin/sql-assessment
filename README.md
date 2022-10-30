@@ -9,7 +9,7 @@ marketing_data contains ad impression and click data by date and location:
 
 > create table marketing_data ( id int not null primary key auto_increment, date datetime, geo varchar(2), impressions float, clicks float );
 
-## Please provide a SQL statement under each question.
+### Please provide a SQL statement under each question.
 
 - Question #0 (Already done for you as an example) Select the first 2 rows from the marketing data​
 > select * from marketing_data limit 2;​
