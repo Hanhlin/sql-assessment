@@ -42,3 +42,6 @@ WITH ( FORMAT='CSV', FIRSTROW=2 )
 GO
 
 SELECT * FROM marketing_data;
+
+
+
